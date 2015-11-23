@@ -15,6 +15,8 @@ Author: Amie Ding
 7. Run cucumber through bundler, default is using Chrome as browser:
 
     $ bundle exec cucumber
+    or
+    $ bundle exec cucumber -p html_report -p chrome
 
 # Notes
 1. This project uses Watir Webdriver to test web UI; it will start a real browser to visit the web and use cucumber to test.
