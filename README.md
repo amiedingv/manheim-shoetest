@@ -17,6 +17,7 @@ Author: Amie Ding
     $ bundle exec cucumber
     or
     $ bundle exec cucumber -p html_report -p chrome
+8. Should test everything under different browsers, such as Chrome, Firefox, IE, Safari
 
 # Notes
 1. This project uses Watir Webdriver to test web UI; it will start a real browser to visit the web and use cucumber to test.
