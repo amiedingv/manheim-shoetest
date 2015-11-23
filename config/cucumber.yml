@@ -1,0 +1,23 @@
+################################################################################
+# Author: "amie ding" <huapingding@gmail.com>
+# This file defines predefined profiles that can be used.
+# Example > Cucumber -t @email_check -p html_report
+
+################################################################################
+# Type of testrun
+default: -f pretty -x
+html_report: -f pretty -f html --out=test-report.html
+junit_report: -f pretty -f junit --out=results
+
+################################################################################
+# Supported browsers (default = chrome)
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+ie: BROWSER=ie
+safari: BROWSER=safari
+
+################################################################################
+# Listed environments (default is set in settings.yml)
+test: TEST_ENV=test 
+
+production: TEST_ENV=production
